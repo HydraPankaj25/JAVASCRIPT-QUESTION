@@ -30,14 +30,15 @@ function toBinary(num) {
     F: "1111",
   };
   for (let ele in num) {
-    binaryNum += hex[ele.toUpper()];
-  }
+    binaryNum += hex[ele.toUpperCase()];
+    
   console.log(binaryNum);
+  }
   return binaryNum;
 }
 
-toBinary(0xff); //➞ "11111111"
+console.log(toBinary("0xff")); //➞ "11111111"
 
-toBinary(0xaa); //➞ "10101010"
+// console.log(toBinary("0xaa"));; //➞ "10101010"
 
-toBinary(0xfa); //➞ "11111010"
+// console.log(toBinary("0xfa"));; //➞ "11111010"
